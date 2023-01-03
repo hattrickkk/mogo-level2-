@@ -1,0 +1,20 @@
+$turquoise: #95E1D3;
+$pink: #F38281;
+$black: #2D3033;
+$white: #fff;
+
+@mixin text($fw, $fz, $lh) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flex-items {
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,6 +1,5 @@
-body {
-	background-color: lightpink;
-}
-
-$test: red;
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap');
+@import url("nullStyle.scss");
+@import url("story.scss");
+@import url("futures.scss");
+@import url("services.scss");
