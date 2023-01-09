@@ -1,0 +1,85 @@
+@use 'variable.scss' as *;
+
+.banner {
+	background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url("../images/banner/back.jpg") center/cover no-repeat;
+	padding: 190px 0 30px 0;
+
+	&__header-block {
+		margin: 0 0 164px 0;
+	}
+
+	.header-block {
+		color: $white;
+
+		&__title {
+			@include text(400, 64px, 93px);
+		}
+
+		&__subtitle {
+			@include text(700, 144px, 176px);
+
+			&::after {
+				background-color: $white;
+			}
+		}
+	}
+
+	&__button {
+		@include text(700, 24px, 28px);
+		@include flex-center;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		max-width: 370px;
+		padding: 24px 10px;
+		margin: 0 auto;
+
+		border: 4px solid $white;
+	}
+
+	&__pagination {
+		margin: 115px -15px 0 -15px;
+		@include flex-items;
+
+		.item {
+			padding: 0 15px;
+			flex: 0 1 25%;
+			opacity: 0.8;
+
+			&:first-child {
+				opacity: 1;
+			}
+
+			&:first-child .item__progress::after {
+				background-color: $pink;
+				content: "";
+				width: 40%;
+				position: absolute;
+				height: 4px;
+			}
+
+			&__progress {
+				width: 100%;
+				height: 4px;
+				position: relative;
+				background-color: $white;
+			}
+
+			&__text-num {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 21px;
+				@include text(500, 18px, 21px);
+				align-items: center;
+				text-transform: uppercase;
+				color: $white;
+				padding: 34px 0 0 0;
+
+				span {
+					@include text(700, 36px, 42px);
+				}
+			}
+		}
+	}
+
+}

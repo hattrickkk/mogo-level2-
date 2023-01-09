@@ -1,0 +1,65 @@
+@use 'variable.scss' as *;
+
+.partners {
+	background-color: $whitef8;
+	padding: 42px 0;
+
+	&__inner {
+		@include flex-items;
+	}
+
+	&__item {
+		flex: 0 1 70px;
+		@include flex-center;
+	}
+
+	&__item img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.partners {
+		padding: 35px 0;
+
+		&__item {
+			flex: 0 1 50px;
+		}
+	}
+}
+
+@media screen and (max-width:620px) {
+	.partners {
+		padding: 45px 0;
+
+		&__inner {
+			flex-wrap: wrap;
+		}
+
+		&__item:not(:last-child) {
+			margin: 0 0 35px 0;
+		}
+
+		&__item:nth-child(1),
+		&__item:nth-child(2),
+		&__item:nth-child(4),
+		&__item:nth-child(5) {
+			flex: 0 1 50%;
+		}
+
+		&__item:nth-child(3),
+		&__item:nth-child(6) {
+			flex: 0 1 100%;
+		}
+
+		&__item img {
+			max-width: 50px;
+		}
+	}
+}
+
+@media screen and (max-width:620px) {
+	.partners {
+		padding: 40px 0;
+	}
+}

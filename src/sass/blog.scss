@@ -1,0 +1,82 @@
+@use "variable.scss" as *;
+
+.blog {
+	padding: 46px 0 94px 0;
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/blog/back.jpg") center/cover no-repeat;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+	}
+
+	&__img img {
+		max-width: 42px;
+	}
+
+	&__img {
+		margin: 0 0 31px 0;
+	}
+
+	&__title {
+		@include text(900, 36px, 42px);
+		text-align: center;
+		text-transform: uppercase;
+		color: $pink;
+		position: relative;
+	}
+
+	&__title::after {
+		content: "";
+		width: 170px;
+		height: 4px;
+		position: absolute;
+		bottom: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $pink;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.blog {
+		padding: 28px 0 65px 0;
+
+		&__img img {
+			max-width: 29px;
+		}
+
+		&__img {
+			margin: 0 0 20px 0;
+		}
+
+		&__title {
+			@include text(900, 24px, 28px);
+		}
+
+		&__title::after {
+			width: 148px;
+			bottom: -30px;
+		}
+	}
+}
+
+@media screen and (max-width:370px) {
+	.blog {
+		padding: 42px 0 97px 0;
+
+		&__img img {
+			max-width: 42px;
+		}
+
+		&__img {
+			margin: 0 0 36px 0;
+		}
+
+		&__title::after {
+			width: 134px;
+			bottom: -50px;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@use 'variable.scss' as *;
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+
+	&__logo {}
+
+	&__menu {}
+
+	&__list {}
+
+	&__link {}
+}

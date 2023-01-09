@@ -1,0 +1,417 @@
+@use "variable.scss" as *;
+
+.footer {
+	padding: 78px 0 0 0;
+	background-color: $whitef8;
+
+	&__top {
+		@include flex-items;
+		margin: 0 -15px;
+		border-bottom: 1px solid $gray;
+		padding: 0 0 42px 0;
+	}
+
+	&__bottom {
+		padding: 20px 0;
+		@include text(700, 13px, 15px);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.column {
+		padding: 0 15px;
+
+		&:nth-child(1) {
+			flex: 0 1 370px;
+		}
+
+		&:nth-child(2) {
+			flex: 0 1 470px;
+		}
+
+		&:nth-child(3) {
+			flex: 0 1 270px;
+		}
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__img {
+			max-width: 148px;
+			max-height: 38px;
+			margin: 0 0 47px 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__text {
+			color: $gray;
+			margin: 0 0 50px 0;
+		}
+
+		&__followers {
+			margin: 0 0 31px 0;
+			position: relative;
+
+			&::after {
+				content: "";
+				width: 100%;
+				height: 1px;
+				background-color: $gray;
+				position: absolute;
+				bottom: -17px;
+			}
+
+			p {
+				font-style: italic;
+				@include text(400, 18px, 30px);
+				text-transform: uppercase;
+
+				span {
+					font-style: normal;
+					@include text(700, 18px, 30px);
+				}
+			}
+
+
+		}
+
+		&__followus {
+			@include flex-items;
+			align-items: center;
+			margin: 0 0 46px 0;
+
+			&-text {
+				color: $gray;
+				@include text(400, 13px, 15px);
+			}
+		}
+
+
+		&__socials {
+			@include flex-items;
+
+			&-item {
+				max-width: 24px;
+				max-height: 24px;
+
+				&:not(:last-child) {
+					margin: 0 11px 0 0;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		&__email {
+			display: flex;
+			@include text(400, 18px, 21px);
+			height: 55px;
+
+			&>* {
+				@include flex-center;
+				text-align: center;
+			}
+
+			input[type="text"] {
+				flex: 0 0 66.666%;
+				border: 1px solid $gray;
+				border-right: none;
+			}
+
+			input[type="button"] {
+				flex: 0 0 33.333%;
+				background-color: $turquoise;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $white;
+				transition: 0.3s;
+				padding: 0 5px;
+				cursor: pointer;
+			}
+
+			input[type="button"]:hover {
+				background-color: $turquoise-medium;
+			}
+
+			input[type="button"]:active {
+				background-color: $turquoise-dark;
+			}
+		}
+
+		&__title {
+			@include text(700, 24px, 28px);
+			text-transform: uppercase;
+			margin: 0 0 41px 0;
+		}
+
+		&__news {
+			display: flex;
+			flex-direction: column;
+
+			.news-item {
+				display: flex;
+
+				&:not(:last-child) {
+					margin: 0 0 20px 0;
+				}
+
+				&__photo {
+					flex: 0 0 170px;
+				}
+
+				&__photo img {
+					width: 100%;
+					aspect-ratio: 1/0.62;
+					object-fit: cover;
+				}
+
+				&__info {
+					padding: 0 0 0 30px;
+					display: flex;
+					flex-direction: column;
+				}
+
+				&__title {
+					@include text(700, 18px, 21px);
+					text-transform: uppercase;
+					flex: 1 1 auto;
+				}
+
+				&__date {
+					@include text(400, 13px, 15px);
+					padding: 10px 0;
+				}
+			}
+		}
+
+		&__instagram {
+			display: grid;
+			grid-template-columns: repeat(3, 33.333%);
+			grid-template-rows: repeat(3, 33.333%);
+			margin: 0 0 41px 0;
+
+			&-item {
+				position: relative;
+				padding: 0 0 85% 0;
+				aspect-ratio: 1/1;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					object-fit: center;
+				}
+			}
+		}
+
+		&__link {
+			color: $black;
+			@include text(400, 13px, 15px);
+			text-decoration-line: underline;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $pink;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.footer {
+		padding: 52px 0 0 0;
+
+		&__top {
+			padding: 0 0 50px 0;
+		}
+
+		.column {
+
+			&__img {
+				max-width: 95px;
+				max-height: 25px;
+				margin: 0 0 34px 0;
+			}
+
+			&__text {
+				margin: 0 0 40px 0;
+			}
+
+			&__followers {
+				margin: 0 0 28px 0;
+
+				&::after {
+					bottom: -15px;
+				}
+
+				p {
+					@include text(400, 14px, 30px);
+				}
+			}
+
+			&__followus {
+				margin: 0 0 35px 0;
+
+				&-text {
+					@include text(400, 12px, 14px);
+				}
+			}
+
+
+			&__socials {
+
+				&-item {
+					max-width: 16px;
+					max-height: 16px;
+				}
+
+				&-item:not(:last-child) {
+					margin: 0 14px 0 0;
+				}
+			}
+
+			&__email {
+				@include text(400, 14px, 16px);
+				height: 37px;
+			}
+
+			&__title {
+				@include text(700, 18px, 21px);
+				margin: 0 0 28px 0;
+			}
+
+			&__news {
+				.news-item {
+
+					&:not(:last-child) {
+						margin: 0 0 20px 0;
+					}
+
+					&__photo {
+						flex: 0 0 115px;
+						align-self: stretch;
+					}
+
+					&__photo img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+
+					&__info {
+						padding: 0 0 0 20px;
+					}
+
+					&__title {
+						@include text(700, 14px, 16px);
+					}
+
+					&__date {
+						padding: 5px 0;
+						@include text(400, 12px, 14px);
+					}
+				}
+			}
+
+			&__instagram {
+				margin: 0 0 16px 0;
+			}
+
+			&__link {
+				@include text(400, 12px, 14px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width:715px) {
+	.footer {
+		&__top {
+			flex-direction: column;
+			margin: 0;
+			padding: 0 0 33px 0;
+		}
+
+		.column {
+			padding: 0;
+
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				flex: 0 1 auto;
+			}
+
+			&:not(:last-child) {
+				margin: 0 0 35px 0;
+			}
+
+			&__inner {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			&__img {
+				align-self: center;
+			}
+
+			&__text {
+				margin: 0 0 32px 0;
+				text-align: center;
+			}
+
+			&__socials {
+				&-item {
+					max-width: 25px;
+					max-height: 25px;
+				}
+			}
+
+			&__email {
+				flex-direction: column;
+				height: auto;
+
+				&>* {
+					min-height: 37px;
+				}
+
+				input[type="text"] {
+					border: 1px solid $gray;
+					margin: 0 0 24px 0;
+					text-align: left;
+					padding: 0 10px;
+				}
+			}
+
+			&__title {
+				margin: 0 0 16px 0;
+				align-self: center;
+			}
+
+			&__instagram {
+				margin: 0 0 35px 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:380px) {
+	.footer {
+		.column {
+
+			&__socials {
+				&-item {
+					max-width: 16px;
+					max-height: 16px;
+				}
+			}
+		}
+	}
+}

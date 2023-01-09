@@ -6,11 +6,86 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MOGO</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./sass/style.scss">
 </head>
 
 <body>
 	<div class="wrapper">
+
+		<header class="header">
+			<div class="container">
+				<div class="header__logo">
+					<img src="images/header/MoGo.svg" alt="logo">
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a class="header__link" href="#">about</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">service</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">work</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">blog</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">Contact</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">
+								<img src="images/header/icons.svg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="header__link" href="#">
+								<img src="images/header/icons-1.svg" alt="">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="banner">
+			<div class="container">
+				<div class="banner__header-block header-block">
+					<h2 class="header-block__title">Creative Template</h2>
+					<p class="header-block__subtitle">Welcome to MoGo</p>
+				</div>
+				<a class="banner__button" href="#">learn more</a>
+				<div class="banner__pagination">
+					<div class="banner__pagination-item item">
+						<div class="item__inner">
+							<div class="item__progress"></div>
+							<p class="item__text-num"> <span>01</span> intro</p>
+						</div>
+					</div>
+					<div class="banner__pagination-item item">
+						<div class="item__inner">
+							<div class="item__progress"></div>
+							<p class="item__text-num"> <span>02</span> work</p>
+						</div>
+					</div>
+					<div class="banner__pagination-item item">
+						<div class="item__inner">
+							<div class="item__progress"></div>
+							<p class="item__text-num"> <span>03</span> about</p>
+						</div>
+					</div>
+					<div class="banner__pagination-item item">
+						<div class="item__inner">
+							<div class="item__progress"></div>
+							<p class="item__text-num"> <span>04</span> contacts</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<section class="story">
 			<div class="container">
 				<div class="story__header-block header-block">
@@ -171,9 +246,842 @@
 			</div>
 		</section>
 
+		<section class="design">
+			<div class="container">
+				<div class="design__header-block header-block">
+					<h2 class="header-block__title">For all devices</h2>
+					<p class="header-block__subtitle">unique design</p>
+				</div>
+				<div class="design__images">
+					<img class="design__tablet" src="images/design/tablet.png" alt="tablet">
+					<img class="design__phone" src="images/design/phone.png" alt="phone">
+				</div>
+			</div>
+		</section>
 
-		<br><br>
+		<section class="service">
+			<div class="container">
+				<div class="service__header-block header-block">
+					<h2 class="header-block__title">Service</h2>
+					<p class="header-block__subtitle">what we do</p>
+				</div>
+				<p class="service__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed
+					venenatis lacus. Eget sit ridiculus facilisi
+					amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+					feugiat.
+				</p>
+				<div class="service__content">
+					<div class="service__img">
+						<img src="images/service/man.jpg" alt="">
+					</div>
+					<div class="service__accordion accordion">
+						<div class="accordion__item">
+							<div class="accordion__top">
+								<div class="accordion__info">
+									<img class="accordion__img" src="images/service/icon1.svg" alt="sds">
+									<h3 class="accordion__title">photography</h3>
+								</div>
+								<div class="accordion__btn">
+									<span></span>
+								</div>
+							</div>
+							<div class="accordion__bottom">
+								<div class="accordion__bottom-inner">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet,
+										et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+										sit
+										enim
+										fringilla. Proin viverra nibh in
+										vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed
+										nunc
+										aenean.
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi
+										accusamus
+										magni corrupti velit odio assumenda suscipit ex? Doloribus illum sint vero
+										corporis
+										voluptate magnam cum dicta esse, nobis hic!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__top">
+								<div class="accordion__info">
+									<img class="accordion__img" src="images/service/icon2.svg" alt="sds">
+									<h3 class="accordion__title">creativity</h3>
+								</div>
+								<div class="accordion__btn">
+									<span></span>
+								</div>
+							</div>
+							<div class="accordion__bottom">
+								<div class="accordion__bottom-inner">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet,
+										et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+										sit
+										enim
+										fringilla. Proin viverra nibh in
+										vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed
+										nunc
+										aenean.
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi
+										accusamus
+										magni corrupti velit odio assumenda suscipit ex? Doloribus illum sint vero
+										corporis
+										voluptate magnam cum dicta esse, nobis hic!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__top">
+								<div class="accordion__info">
+									<img class="accordion__img" src="images/service/icon3.svg" alt="sds">
+									<h3 class="accordion__title">web design</h3>
+								</div>
+								<div class="accordion__btn">
+									<span></span>
+								</div>
+							</div>
+							<div class="accordion__bottom">
+								<div class="accordion__bottom-inner">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet,
+										et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod
+										sit
+										enim
+										fringilla. Proin viverra nibh in
+										vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed
+										nunc
+										aenean.
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi
+										accusamus
+										magni corrupti velit odio assumenda suscipit ex? Doloribus illum sint vero
+										corporis
+										voluptate magnam cum dicta esse, nobis hic!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<div class="reviews">
+			<div class="container">
+				<div class="reviews__slider slider swiper">
+					<div class="slider-wrapper swiper-wrapper">
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/sms.svg" alt="icon-sms">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">Jon Doe</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/sms.svg" alt="icon-sms">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">Victoria Del</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/sms.svg" alt="icon-sms">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">Nick Berry</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/sms.svg" alt="icon-sms">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem, ipsum dolor sit consectetur adipisicing elit. Quis nemo nesciunt
+										illum voluptas cupiditate commodi modi possimus laboriosam iste officiis?
+									</p>
+									<p class="slide__text-name">Peter Parker</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/sms.svg" alt="icon-sms">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio
+										blanditiis, hic nesciunt doloribus non eveniet laudantium molestias quae
+										incidunt?
+									</p>
+									<p class="slide__text-name">Joodie Jonson</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-pagination swiper-pagination"></div>
+					<div class="slider-button-prev swiper-button-prev"></div>
+					<div class="slider-button-next swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+
+		<section class="our-team">
+			<div class="container">
+				<div class="our-team__header-block header-block">
+					<h2 class="header-block__title">Who we are</h2>
+					<p class="header-block__subtitle">meet our team</p>
+				</div>
+				<p class="our-team__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed
+					venenatis lacus. Eget sit ridiculus facilisi
+					amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+					feugiat.
+				</p>
+				<div class="our-team__items">
+					<div class="our-team__item item">
+						<div class="item__top">
+							<div class="item__img">
+								<img src="images/our-team/photo1.jpg" alt="photo1">
+							</div>
+							<div class="item__hover-block hover-block">
+								<div class="hover-block__inner">
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/facebook.svg" alt="facebook"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/twitter.svg" alt="twitter"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/pinterest.svg" alt="pinterest"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/instagram.svg" alt="instagram"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item__bottom">
+							<h4 class="item__label-name">Kadin Dias</h4>
+							<h5 class="item__label-job">founder, ceo</h5>
+						</div>
+					</div>
+					<div class="our-team__item item">
+						<div class="item__top">
+							<div class="item__img">
+								<img src="images/our-team/photo2.jpg" alt="photo2">
+							</div>
+							<div class="item__hover-block hover-block">
+								<div class="hover-block__inner">
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/facebook.svg" alt="facebook"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/twitter.svg" alt="twitter"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/pinterest.svg" alt="pinterest"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/instagram.svg" alt="instagram"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item__bottom">
+							<h4 class="item__label-name">Zain Calzoni</h4>
+							<h5 class="item__label-job">designer</h5>
+						</div>
+					</div>
+					<div class="our-team__item item">
+						<div class="item__top">
+							<div class="item__img">
+								<img src="images/our-team/photo3.jpg" alt="photo3">
+							</div>
+							<div class="item__hover-block hover-block">
+								<div class="hover-block__inner">
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/facebook.svg" alt="facebook"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/twitter.svg" alt="twitter"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/pinterest.svg" alt="pinterest"></a>
+									</div>
+									<div class="hover-block__social-item">
+										<a href="#"><img src="images/our-team/instagram.svg" alt="instagram"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item__bottom">
+							<h4 class="item__label-name">Charlie George</h4>
+							<h5 class="item__label-job">photographer</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="partners">
+			<div class="container">
+				<div class="partners__inner">
+					<div class="partners__item">
+						<img src="images/partners/icon1.svg" alt="icon1">
+					</div>
+					<div class="partners__item">
+						<img src="images/partners/icon2.svg" alt="icon2">
+					</div>
+					<div class="partners__item">
+						<img src="images/partners/icon3.svg" alt="icon3">
+					</div>
+					<div class="partners__item">
+						<img src="images/partners/icon4.svg" alt="icon4">
+					</div>
+					<div class="partners__item">
+						<img src="images/partners/icon5.svg" alt="icon5">
+					</div>
+					<div class="partners__item">
+						<img src="images/partners/icon6.svg" alt="icon6">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="work">
+			<div class="work__top">
+				<div class="container">
+					<div class="work__header-block header-block">
+						<h2 class="header-block__title">What we do</h2>
+						<p class="header-block__subtitle">some of our work</p>
+					</div>
+					<p class="work__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed
+						venenatis lacus. Eget sit ridiculus facilisi
+						amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+						feugiat.
+					</p>
+				</div>
+			</div>
+			<div class="work__container">
+				<div class="work__galery">
+					<div class="work__galery-item">
+						<img src="images/work/1.jpg" alt="work1">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item">
+						<img src="images/work/2.jpg" alt="work2">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item work__galery-item--big">
+						<img src="images/work/3.jpg" alt="work3">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item">
+						<img src="images/work/4.jpg" alt="work4">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item">
+						<img src="images/work/5.jpg" alt="work5">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item">
+						<img src="images/work/6.jpg" alt="work6">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+					<div class="work__galery-item">
+						<img src="images/work/7.jpg" alt="work7">
+						<div class="work__hover-block">
+							<img src="images/work/icon_hover.svg" alt="icon-hover">
+							<h4 class="work__hover-block-title">creatively design</h4>
+							<p class="work__hover-block-text">Lorem ipsum dolor sit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="reviews2">
+			<div class="container">
+				<div class="reviews__slider slider swiper">
+					<div class="slider-wrapper swiper-wrapper">
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/photo1.jpg" alt="photo1">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">James Philips</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/photo2.jpg" alt="photo2">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">Victoria Del</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/photo3.jpg" alt="photo3">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+										vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+									</p>
+									<p class="slide__text-name">Nick Berry</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/photo4.jpg" alt="photo4">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem, ipsum dolor sit consectetur adipisicing elit. Quis nemo nesciunt
+										illum voluptas cupiditate commodi modi possimus laboriosam iste officiis?
+									</p>
+									<p class="slide__text-name">Peter Parker</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider-slide slide swiper-slide">
+							<div class="slide__content">
+								<div class="slide__img">
+									<img src="images/review/photo5.jpg" alt="photo5">
+								</div>
+								<div class="slide__text">
+									<p class="slide__text-comment">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio
+										blanditiis, hic nesciunt doloribus non eveniet laudantium molestias quae
+										incidunt?
+									</p>
+									<p class="slide__text-name">Joodie Jonson</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-pagination swiper-pagination"></div>
+					<div class="slider-button-prev swiper-button-prev"></div>
+					<div class="slider-button-next swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+
+		<section class="clients">
+			<div class="container">
+				<div class="clients__header-block header-block">
+					<h2 class="header-block__title">Happy Clients</h2>
+					<p class="header-block__subtitle">what people say</p>
+				</div>
+				<div class="clients__comments">
+					<div class="clients__item item">
+						<div class="item__inner">
+							<div class="item__photo">
+								<img src="images/clients/Ellipse 10.jpg" alt="photo1">
+							</div>
+							<div class="item__info">
+								<div class="item__info-header">
+									<h4 class="item__title">Phillip Culhane</h4>
+									<h5 class="item__subtitle">photographer</h5>
+								</div>
+								<p class="item__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+									quis proin varius vitae leo eget tincidunt duis
+									amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="clients__item item">
+						<div class="item__inner">
+							<div class="item__photo">
+								<img src="images/clients/Ellipse 10-1.jpg" alt="photo2">
+							</div>
+							<div class="item__info">
+								<div class="item__info-header">
+									<h4 class="item__title">Paityn Press</h4>
+									<h5 class="item__subtitle">photographer</h5>
+								</div>
+								<p class="item__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+									quis proin varius vitae leo eget tincidunt duis
+									amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="clients__item item">
+						<div class="item__inner">
+							<div class="item__photo">
+								<img src="images/clients/Ellipse 10-2.jpg" alt="photo3">
+							</div>
+							<div class="item__info">
+								<div class="item__info-header">
+									<h4 class="item__title">Dulce Gouse</h4>
+									<h5 class="item__subtitle">photographer</h5>
+								</div>
+								<p class="item__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+									quis proin varius vitae leo eget tincidunt duis
+									amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="clients__item item">
+						<div class="item__inner">
+							<div class="item__photo">
+								<img src="images/clients/Ellipse 10-3.jpg" alt="photo4">
+							</div>
+							<div class="item__info">
+								<div class="item__info-header">
+									<h4 class="item__title">Zaire Schleifer</h4>
+									<h5 class="item__subtitle">photographer</h5>
+								</div>
+								<p class="item__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+									quis proin varius vitae leo eget tincidunt duis
+									amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog-story">
+			<div class="container">
+				<div class="blog-story__header-block header-block">
+					<h2 class="header-block__title">Our Stories</h2>
+					<p class="header-block__subtitle">Latest blog</p>
+				</div>
+				<div class="blog-story__items">
+					<div class="blog-story__item item">
+						<div class="item__inner">
+							<div class="item__img">
+								<img src="images/blog-story/BACK.jpg" alt="BACK">
+								<div class="item__num">
+									<p><span>15</span><br> JAN</p>
+								</div>
+							</div>
+							<h4 class="item__title">Lorem ipsum dolor sit amet</h4>
+							<p class="item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+								quis proin varius vitae leo eget tincidunt duis
+								amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+							</p>
+							<div class="item__options option">
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon1.svg" alt="icon1">
+									</div>
+									<p class="option__text">542</p>
+								</div>
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon2.svg" alt="icon2">
+									</div>
+									<p class="option__text">17</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-story__item item">
+						<div class="item__inner">
+							<div class="item__img">
+								<img src="images/blog-story/BACK.jpg" alt="BACK">
+								<div class="item__num">
+									<p><span>15</span><br> JAN</p>
+								</div>
+							</div>
+							<h4 class="item__title">Lorem ipsum dolor sit amet</h4>
+							<p class="item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+								quis proin varius vitae leo eget tincidunt duis
+								amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+							</p>
+							<div class="item__options option">
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon1.svg" alt="icon1">
+									</div>
+									<p class="option__text">542</p>
+								</div>
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon2.svg" alt="icon2">
+									</div>
+									<p class="option__text">17</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="blog-story__item item">
+						<div class="item__inner">
+							<div class="item__img">
+								<img src="images/blog-story/BACK.jpg" alt="BACK">
+								<div class="item__num">
+									<p><span>15</span><br> JAN</p>
+								</div>
+							</div>
+							<h4 class="item__title">Lorem ipsum dolor sit amet</h4>
+							<p class="item__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+								quis proin varius vitae leo eget tincidunt duis
+								amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+							</p>
+							<div class="item__options option">
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon1.svg" alt="icon1">
+									</div>
+									<p class="option__text">542</p>
+								</div>
+								<div class="option__col">
+									<div class="option__icon">
+										<img src="images/blog-story/icon2.svg" alt="icon2">
+									</div>
+									<p class="option__text">17</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="blog">
+			<div class="container">
+				<div class="blog__inner">
+					<div class="blog__img">
+						<img src="images/blog/icon_blog.svg" alt="">
+					</div>
+					<h2 class="blog__title">latest blog</h2>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__column column">
+						<div class="column__inner">
+							<div class="column__img">
+								<img src="images/footer/MoGo.svg" alt="mogo-logo">
+							</div>
+							<p class="column__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Pellentesque quis proin varius vitae leo eget tincidunt duis
+								amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+							</p>
+							<div class="column__followers">
+								<p><span>15k</span> followers</p>
+							</div>
+							<div class="column__followus">
+								<div class="column__followus-text">
+									<p>Follow Us</p>
+								</div>
+								<div class="column__socials">
+									<div class="column__socials-item">
+										<img src="images/footer/facebook.svg" alt="facebook">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/twitter.svg" alt="twitter">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/instagram.svg" alt="instagram">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/pinterest.svg" alt="pinterest">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/linkedin.svg" alt="linkedin">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/youtube.svg" alt="youtube">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/topcoat_dribble.svg" alt="topcoat_dribble">
+									</div>
+									<div class="column__socials-item">
+										<img src="images/footer/tiktok.svg" alt="tiktok">
+									</div>
+								</div>
+							</div>
+							<div class="column__email">
+								<input type="text" placeholder="Your Email">
+								<input type="button" value="subscribe">
+							</div>
+						</div>
+					</div>
+					<div class="footer__column column">
+						<div class="column__inner">
+							<h4 class="column__title">blogs</h4>
+							<div class="column__news">
+								<div class="column__news-item news-item">
+									<div class="news-item__photo">
+										<img src="images/footer/photo1.jpg" alt="">
+									</div>
+									<div class="news-item__info">
+										<h5 class="news-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit.
+										</h5>
+										<p class="news-item__date">jan.9.22.15</p>
+									</div>
+								</div>
+								<div class="column__news-item news-item">
+									<div class="news-item__photo">
+										<img src="images/footer/photo2.jpg" alt="photo2">
+									</div>
+									<div class="news-item__info">
+										<h5 class="news-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit.
+										</h5>
+										<p class="news-item__date">jan.9.22.15</p>
+									</div>
+								</div>
+								<div class="column__news-item news-item">
+									<div class="news-item__photo">
+										<img src="images/footer/photo3.jpg" alt="photo3">
+									</div>
+									<div class="news-item__info">
+										<h5 class="news-item__title">
+											Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit.
+										</h5>
+										<p class="news-item__date">jan.9.22.15</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column column">
+						<div class="column__inner">
+							<h4 class="column__title">instagram</h4>
+							<div class="column__instagram">
+								<div class="column__instagram-item">
+									<img src="images/footer/inst1.jpg" alt="inst1">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst2.jpg" alt="inst2">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst3.jpg" alt="inst3">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst4.jpg" alt="inst4">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst5.jpg" alt="inst5">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst6.jpg" alt="inst6">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst7.jpg" alt="inst7">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst8.jpg" alt="inst8">
+								</div>
+								<div class="column__instagram-item">
+									<img src="images/footer/inst9.jpg" alt="inst9">
+								</div>
+							</div>
+							<a class="column__link" href="#">see all photos</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p>Copyright © 2021 mogo. All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/jquery-1.7.1.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,15 @@
 $turquoise: #95E1D3;
+$turquoise-medium: rgba(135, 210, 196, 1);
+$turquoise-dark: rgba(92, 149, 138, 1);
 $pink: #F38281;
 $black: #2D3033;
 $white: #fff;
+$white-gray: #f5f5f5;
+$whitef8: #f8f8f8;
+$gray: #C6CBCD;
+$light-gray: #A9AFB1;
+$yeallow: #F9EFCF;
+$yeallow2: rgb(241, 229, 187);
 
 @mixin text($fw, $fz, $lh) {
 	font-weight: $fw;
@@ -14,6 +22,7 @@ $white: #fff;
 	justify-content: center;
 	align-items: center;
 }
+
 @mixin flex-items {
 	display: flex;
 	justify-content: space-between;

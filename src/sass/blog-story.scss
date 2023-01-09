@@ -1,0 +1,264 @@
+@use "variable.scss" as *;
+
+.blog-story {
+	padding: 71px 0 57px 0;
+
+	&__header-block {
+		margin: 0 0 67px 0;
+	}
+
+	&__items {
+		@include flex-items;
+		margin: 0 -15px;
+	}
+
+	.item {
+		padding: 0 15px;
+		flex: 0 1 33.333%;
+
+		&__inner {}
+
+		&__img {
+			position: relative;
+		}
+
+		&__img img {
+			aspect-ratio: 1/0.68;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		&__num {
+			position: absolute;
+			bottom: 25px;
+			left: -14px;
+			width: 80px;
+			height: 80px;
+			background-color: $turquoise;
+			color: $white;
+			@include flex-center;
+			text-align: center;
+		}
+
+		&__num p {
+			@include text(500, 18px, 30px);
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&__num p span {
+			@include text(700, 36px, 30px);
+		}
+
+		&__title {
+			@include text(700, 24px, 28px);
+			text-transform: uppercase;
+			padding: 40px 0 25px 0;
+		}
+
+		&__text {
+			margin: 0 0 22px 0;
+		}
+
+		.option {
+			display: flex;
+
+			&__col {
+				@include flex-items;
+				align-items: center;
+			}
+
+			&__col:not(:last-child) {
+				margin: 0 50px 0 0;
+			}
+
+			&__icon {
+				flex: 0 0 32px;
+			}
+
+			&__icon img {
+				width: 100%;
+			}
+
+			&__text {
+				padding: 0 0 0 16px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.blog-story {
+		padding: 58px 0;
+
+		&__header-block {
+			margin: 0 0 57px 0;
+		}
+
+		&__items {
+			margin: 0 -10px;
+		}
+
+		.item {
+			padding: 0 10px;
+
+			&__num {
+				bottom: 21px;
+				left: -6px;
+				width: 68px;
+				height: 68px;
+			}
+
+			&__num p {
+				@include text(500, 14px, 20px);
+			}
+
+			&__num p span {
+				@include text(700, 24px, 30px);
+			}
+
+			&__title {
+				@include text(700, 18px, 21px);
+				padding: 34px 0 20px 0;
+			}
+
+			&__text {
+				margin: 0 0 19px 0;
+			}
+
+			.option {
+
+				&__col:not(:last-child) {
+					margin: 0 44px 0 0;
+				}
+
+				&__icon {
+					flex: 0 0 27px;
+				}
+
+				&__text {
+					padding: 0 0 0 13.5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 876px) {
+	.blog-story {
+		padding: 30px 0 48px 0;
+
+		.item {
+
+			&__num {
+				bottom: 16px;
+				width: 55px;
+				height: 55px;
+			}
+
+			&__num p {
+				@include text(500, 14px, 20px);
+			}
+
+			&__num p span {
+				@include text(700, 24px, 30px);
+			}
+
+			&__title {
+				@include text(700, 18px, 21px);
+				padding: 34px 0 20px 0;
+			}
+
+			&__text {
+				margin: 0 0 19px 0;
+			}
+
+			.option {
+
+				&__col:not(:last-child) {
+					margin: 0 44px 0 0;
+				}
+
+				&__icon {
+					flex: 0 0 27px;
+				}
+
+				&__text {
+					padding: 0 0 0 13.5px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.blog-story {
+		&__items {
+			flex-wrap: wrap;
+		}
+
+		.item {
+			flex: 0 1 100%;
+			max-width: 500px;
+			margin: 0 auto;
+
+			&:not(:last-child) {
+				margin: 0 auto 40px auto;
+			}
+
+			&__num {
+				bottom: 16px;
+				width: 67px;
+				height: 67px;
+			}
+
+			&__title {
+				padding: 26px 0 18px 0;
+			}
+
+			&__text {
+				margin: 0 0 25px 0;
+			}
+
+			.option {
+				&__col:not(:last-child) {
+					margin: 0 55px 0 0;
+				}
+
+				&__icon {
+					flex: 0 0 32px;
+				}
+
+				&__text {
+					padding: 0 0 0 18px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.blog-story {
+		padding: 30px 0;
+
+		&__items {
+			margin: 0;
+		}
+
+		.item {
+			padding: 0;
+
+			&:not(:last-child) {
+				margin: 0 auto 35px auto;
+			}
+
+			&__num {
+				left: 0;
+			}
+
+			&__text {
+				margin: 0 0 20px 0;
+			}
+		}
+	}
+}

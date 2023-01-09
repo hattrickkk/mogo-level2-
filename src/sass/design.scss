@@ -1,0 +1,159 @@
+@use 'variable.scss' as *;
+
+.design {
+	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/src/images/design/back.jpg") center/cover no-repeat;
+	padding: 42px 0 56px 0;
+
+	&__header-block {
+		margin: 0 0 83px 0;
+	}
+
+	&__images {
+		position: relative;
+		max-width: 687px;
+		margin: 0 auto;
+	}
+
+	&__tablet {
+		width: 100%;
+	}
+
+	&__phone {
+		position: absolute;
+		bottom: -95px;
+		right: -43px;
+		max-width: 195px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.design {
+		padding: 23px 0 38px 0;
+
+		&__header-block {
+			margin: 0 0 56px 0;
+		}
+
+		&__images {
+			max-width: 460px;
+		}
+
+		&__phone {
+			bottom: -63px;
+			right: -29px;
+			max-width: 136px;
+		}
+	}
+}
+
+@media screen and (max-width:550px) {
+	.design {
+		&__images {
+			max-width: 430px;
+		}
+
+		&__phone {
+			bottom: -63px;
+			max-width: 120px;
+		}
+	}
+}
+
+@media screen and (max-width:510px) {
+	.design {
+		&__images {
+			max-width: 400px;
+		}
+
+		&__phone {
+			right: -20px;
+			max-width: 110px;
+		}
+	}
+}
+
+@media screen and (max-width:450px) {
+	.design {
+		&__images {
+			max-width: 350px;
+		}
+
+		&__phone {
+			max-width: 100px;
+		}
+	}
+}
+
+@media screen and (max-width:405px) {
+	.design {
+		&__images {
+			max-width: 300px;
+		}
+
+		&__phone {
+			max-width: 90px;
+		}
+	}
+}
+
+@media screen and (max-width:350px) {
+	.design {
+		&__images {
+			max-width: 270px;
+		}
+	}
+}
+
+@media screen and (max-width:320px) {
+	.design {
+		// .header-block {
+		// 	&__title {
+		// 		@include text(400, 30px, 44px);
+		// 	}
+
+		// 	&__subtitle {
+		// 		@include text(900, 36px, 42px);
+		// 	}
+
+		// 	&__subtitle::after {
+		// 		bottom: -25px;
+		// 	}
+		// }
+
+		// .header-block>* {
+		// 	min-height: 80px;
+		// }
+
+		padding: 20px 0 25px 0;
+
+		&__header-block {
+			margin: 0 0 61px 0;
+		}
+
+		&__images {
+			max-width: 286px;
+		}
+
+		&__phone {
+			bottom: -50px;
+			right: 29px;
+			max-width: 85px;
+		}
+	}
+}
+
+@media screen and (max-width:270px) {
+	.design {
+		&__phone {
+			max-width: 70px;
+		}
+	}
+}
+
+@media screen and (max-width:225px) {
+	.design {
+		&__phone {
+			max-width: 60px;
+		}
+	}
+}
